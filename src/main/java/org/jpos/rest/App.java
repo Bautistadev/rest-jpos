@@ -7,6 +7,7 @@ import io.swagger.jaxrs.listing.SwaggerSerializers;
 
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
+import org.jpos.rest.Exceptions.ExceptionProvider;
 
 public class App extends ResourceConfig {
 
@@ -16,5 +17,6 @@ public class App extends ResourceConfig {
         register(AutoRegisterFeature.class);
         register(ApiListingResource.class);
         register(SwaggerSerializers.class);
+        register(ExceptionProvider.class);
     }
-    }
+}

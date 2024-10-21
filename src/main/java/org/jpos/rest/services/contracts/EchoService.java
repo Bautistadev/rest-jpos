@@ -8,4 +8,5 @@ import org.glassfish.jersey.spi.Contract;
 public interface EchoService {
 
     String echo();
+    String echo(String message);
 }
