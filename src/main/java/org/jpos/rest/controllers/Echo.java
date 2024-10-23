@@ -1,12 +1,11 @@
 package org.jpos.rest.controllers;
 import io.swagger.annotations.Api;
 import org.jpos.rest.services.contracts.EchoService;
-import org.jpos.rest.services.impl.EchoServiceImpl;
+
 
 import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -21,6 +20,13 @@ public class Echo {
     @Produces(MediaType.APPLICATION_JSON)
     public Response echo() {
         return echoService.echo();
+    }
+
+    @POST
+    @Consumes(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.TEXT_PLAIN)
+    public String echo(String message){
+        return echoService.echo(message);
     }
 
 }

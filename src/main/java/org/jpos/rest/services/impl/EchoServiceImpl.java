@@ -1,5 +1,7 @@
 package org.jpos.rest.services.impl;
 
+
+import org.jpos.rest.Exceptions.CustomExceptions.BadRequestException;
 import org.jpos.rest.dtos.response.Prueba;
 import org.jpos.rest.services.contracts.EchoService;
 import org.jvnet.hk2.annotations.Service;
@@ -19,4 +21,15 @@ public class EchoServiceImpl implements EchoService {
         resp.put("message","Echo!");
         return  Response.ok(new Prueba("Echo!")).status(Response.Status.OK).build();
     }
+
+    @Override
+    public String echo(String message) {
+
+        if(message.equalsIgnoreCase("hola"))
+            throw new BadRequestException("No ingresar hola");
+
+        return message;
+    }
+
+
 }

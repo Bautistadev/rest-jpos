@@ -19,7 +19,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Sample-REST-API</servlet-name>
-        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/jpos/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
