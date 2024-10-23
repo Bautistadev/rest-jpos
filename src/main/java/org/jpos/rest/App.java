@@ -12,6 +12,7 @@ import org.jpos.rest.Exceptions.ExceptionProvider;
 public class App extends ResourceConfig {
 
     public App() {
+        super();
         register(JacksonFeature.class);
         register(new MyApplicationBinder());
         register(AutoRegisterFeature.class);
