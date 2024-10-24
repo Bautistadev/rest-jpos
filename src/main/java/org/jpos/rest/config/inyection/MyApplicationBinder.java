@@ -1,4 +1,4 @@
-package config.inyection;
+package org.jpos.rest.config.inyection;
 
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.jpos.rest.services.contracts.EchoService;

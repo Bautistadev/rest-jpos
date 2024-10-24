@@ -1,4 +1,4 @@
-package config;
+package org.jpos.rest.config;
 
 import io.swagger.jaxrs.config.BeanConfig;
 
