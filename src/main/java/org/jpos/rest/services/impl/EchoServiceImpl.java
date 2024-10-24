@@ -6,7 +6,6 @@ import org.jpos.rest.dtos.response.Prueba;
 import org.jpos.rest.services.contracts.EchoService;
 import org.jvnet.hk2.annotations.Service;
 
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;

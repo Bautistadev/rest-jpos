@@ -14,7 +14,7 @@
     </servlet>
     <servlet>
         <servlet-name>Swagger Configuration</servlet-name>
-        <servlet-class>config.SwaggerConfigurationServlet</servlet-class>
+        <servlet-class>org.jpos.rest.config.SwaggerConfigurationServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
